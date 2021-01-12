@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { Router, Switch, Route } from "react-router-dom";
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware()(compose((window.devTooldsExtention ? window.devTooldsExtention() : f => f)(createstore)));
+const createStoreWithMiddleware = applyMiddleware()(compose((window.devTooldsExtention ? window.devTooldsExtention() : f => f)(createStore)));
 
 import "./style/main.scss";
 
