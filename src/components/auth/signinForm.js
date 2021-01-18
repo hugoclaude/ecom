@@ -8,7 +8,7 @@ class SignInForm extends Component {
     render() {
         const { className } = this.props;
         return (
-            <div className={`${className} sign-in-form`}>
+            <form className={`${className} sign-in-form`}>
                 <Field
                     className="sign-in-form__email"
                     name="email"
@@ -17,7 +17,15 @@ class SignInForm extends Component {
                     placeholder="Email"
                     component={FormInput}
                 />
-            </div>
+                <Field
+                    className="sign-in-form__password"
+                    name="password"
+                    type="password"
+                    title="Password"
+                    placeholder="Password"
+                    component={FormInput}
+                />
+            </form>
         );
     }
 }
