@@ -6,20 +6,20 @@ import {
 export function setHeaderLinks(links) {
     return ({
         type: SET_HEADER_LINKS,
-        payoad: links
+        payload: links
     })
 }
 
 export function setNavbarLinks(links) {
     return ({
         type: SET_NAVBAR_LINKS,
-        payoad: links
+        payload: links
     })
 }
 
 export function changeNavbarActive(_id) {
     return ({
         type: CHANGE_NAVBAR_ACTIVE,
-        payoad: _id
+        payload: _id
     })
 }
