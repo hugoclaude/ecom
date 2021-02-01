@@ -24,8 +24,9 @@ class Account extends Component {
                 component: <AccountInformation/>
             }
         ]
+
         this.props.setHeaderLinks([]);
-        this.props,setNavbarLinks(navbarLinks);
+        this.props.setNavbarLinks(navbarLinks);
     }
 
     renderContent() {
@@ -49,7 +50,7 @@ class Account extends Component {
     }
 }
 
-function mapStateToProps(State) {
+function mapStateToProps (state) {
     const { headerLinks, navbarLinks } = state.headerNavbar;
     return { headerLinks, navbarLinks }
 }

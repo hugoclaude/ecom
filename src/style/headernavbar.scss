@@ -1,4 +1,4 @@
- .header {
+.header {
     grid-row: header-s/header-e;
     grid-column: 1/-1;
     display: grid;
@@ -12,6 +12,7 @@
         grid-column: img-s/img-e;
         grid-row: 1/-1;
     }
+
     &__links {
         grid-column: links-s/links-e;
         grid-row: 1/-1;
@@ -29,6 +30,7 @@
 
         margin-right: 47px;
     }
+
 }
 
 .green-text {
@@ -52,8 +54,8 @@
     font-size: 18px;
     font-weight: normal;
 
-
     & > * {
         grid-row: s/e;
     }
+
 }
