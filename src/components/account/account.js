@@ -27,17 +27,17 @@ class Account extends Component {
             {
                 _id: 0,
                 title: 'Purchase History',
-                active: false,
+                active: true,
                 component: <PurchaseHistory/>
             },
             {
                 _id: 1,
                 title: 'Account Information',
-                active: true,
+                active: false,
                 component: <AccountInformation/>
             }
         ]
-
+        
         this.props.setHeaderLinks(headerLinks);
         this.props.setNavbarLinks(navbarLinks);
     }
@@ -54,20 +54,20 @@ class Account extends Component {
         return jsx;
     }
 
-    render () {
+    render() {
         return (
-            <div>
+            <div className='account'>
                 { this.renderContent() }
             </div>
         )
     }
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
     const { headerLinks, navbarLinks } = state.headerNavbar;
     return { headerLinks, navbarLinks }
 }
 
-Account = connect(mapStateToProps, actions) (Account);
+Account = connect(mapStateToProps, actions)(Account);
 
 export default Account;
