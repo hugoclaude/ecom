@@ -10,7 +10,7 @@ class SignIn extends Component {
 
     componentDidMount() {
         this.props.setHeaderLinks([]);
-        this.props.setNavbarLinks([ ]);
+        this.props.setNavbarLinks([]);
     }
 
     onSubmit = (fields) => {
