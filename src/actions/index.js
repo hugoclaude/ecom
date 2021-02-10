@@ -13,5 +13,6 @@ export {
     setNavbarLinks,
     changeNavbarActive,
 
-    fetchUserPurchases
+    fetchUserPurchases,
+    setPurchaseDetail
 };
