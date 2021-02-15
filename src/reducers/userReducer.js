@@ -5,7 +5,17 @@ import {
 
 const INITIAL_STATE = {
     purchases: [],
-    purchaseDetail: {}
+    purchaseDetail: {
+        _id: -1,
+        total: 0,
+        orderNumber: '',
+        orderDate: null,
+        creditCard: '',
+        user: {
+            name: '',
+            shippingAddress:''
+        }
+    }
 }
 
 export default function(state = INITIAL_STATE, action) {
@@ -18,7 +28,7 @@ export default function(state = INITIAL_STATE, action) {
         case SET_PURCHASE_DETAIL:
             let purchaseDetail;
             state.purchases.map(purchase => {
-                if(purchase._id = action.payload) {
+                if(purchase._id == action.payload) {
                     purchaseDetail = purchase;
                 }
                 return {
