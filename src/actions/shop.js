@@ -8,7 +8,7 @@ import {
 export function fetchShopCategories() {
     return ({
         type: SET_NAVBAR_LINKS,
-        yaload: [
+        payload: [
             {
                 _id: 0,
                 title: 'ALL'
