@@ -6,7 +6,6 @@ import {
 } from './types';
 
 export function filterProductsWithCategoryId(_id) {
-    console.log(_id);
     return ({
         type: FILTER_PRODUCTS_WITH_CATEGORY_ID,
         payload: _id
@@ -47,9 +46,8 @@ export function fetchShopCategories() {
                     title: 'Ruby'
                 },
             ]
-        }
-    )
-}
+        })
+    }
 
 
 export function fetchShopProducts() {
