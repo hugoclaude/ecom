@@ -23,20 +23,18 @@ body {
 @import 'details';
 
 // Auth
-
 @import 'auth/signin';
 @import 'auth/signup';
 
 // Account
-
 @import 'account/account';
 @import 'account/purchase-history';
 @import 'account/account-information';
 
 // Shop
-
 @import 'shop/shop';
 @import 'shop/shop-search-bar';
+@import 'shop/shop-product';
 
 // Quantity
 @import 'quantity';

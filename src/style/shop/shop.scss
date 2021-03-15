@@ -1,4 +1,14 @@
 .shop {
     grid-row: content-s/content-e;
     grid-column: s/e;
+
+    display: grid;
+    grid-template-rows: 15px [search-bar-s] 38px [search-bar-e] 57px;
+    grid-template-columns: [s] minsmax(100px, 1035px) [e];
+    justify-content: center;
+
+    &__search-bar {
+        grid-row: search-bar-s/search-bar-e;
+        grid-column: s/e;
+    }
 }
