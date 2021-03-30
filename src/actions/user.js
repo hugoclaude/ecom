@@ -27,7 +27,7 @@ export function fetchCartProducts() {
                 quantity: 2
             },
             {
-                _id: 1`,
+                _id: 1,
                 product: {
                     _id: 1,
                     title: 'Graph Database',

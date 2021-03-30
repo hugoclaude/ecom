@@ -5,14 +5,14 @@ import * as actions from '../../actions';
 import ShopSearchBar from './shopSearchBar';
 import ShopProduct from './shopProduct';
 import ShopCart from './shopCart';
-import CartButton from './cartButton';
+import CartButton from './shopCart';
 
 class Shop extends Component {
 
     constructor() {
         super()
 
-        this.stat = {
+        this.state = {
             showCart: true
         }
     }

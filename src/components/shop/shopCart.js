@@ -4,17 +4,11 @@ import CartProduct from './cartProduct';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-function CartButton({className, icon}) {
-    return (
-        <div className={`${className} cart-button`}>
-            <i className={icon}/>
-        </div>
-    )
-}
+import CartButton from './cartButton';
 
 function CartContent({className, products}) {
     let count = products.length;
-    let productsJSX = products.map(prpduct => <CartProduct {...product} key={product._id}/>);
+    let productsJSX = products.map(product => <CartProduct {...product} key={product._id}/>);
     return (
         <div className={`${className} cart-content`}>
             <div className='cart-content__title'>
@@ -24,7 +18,7 @@ function CartContent({className, products}) {
                 {productsJSX}
             </div>
             <div>
-                <CartFooter className='cart-content__footer' products={products}/>
+                <CartFooter className='cart-content__footer' products={products}/>            
             </div>
         </div>
     )
@@ -56,7 +50,7 @@ class ShopCart extends Component {
     render() {
         const { className } = this.props;
         return (
-            <div className={`${className} shop-cart`}>
+            <div id='shop-cart' className={`${className} shop-cart cart-hidden`}>
                 <CartButton className='shop-cart__toggle' icon='fas fa-times'/>
                 <CartContent className='shop-cart__content' products={this.props.cartProducts}/>
             </div>
@@ -71,6 +65,6 @@ function mapStateToProps(state) {
     }
 }
 
-ShopCart = connect(mapStateToProps, actions)(shopCart);
+ShopCart = connect(mapStateToProps, actions)(ShopCart);
 
 export default ShopCart;
