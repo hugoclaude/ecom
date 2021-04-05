@@ -5,7 +5,7 @@ import * as actions from '../../actions';
 import ShopSearchBar from './shopSearchBar';
 import ShopProduct from './shopProduct';
 import ShopCart from './shopCart';
-import CartButton from './shopCart';
+import CartButton from './cartButton';
 
 class Shop extends Component {
 
@@ -45,7 +45,7 @@ class Shop extends Component {
 
     handleAddToCart = () => {
         if(document.getElementById('shop-cart').classList.contains('cart-hidden')) {
-            document.getElementById('shop-cart').classList.add('cart-hidden');
+            document.getElementById('shop-cart').classList.remove('cart-hidden');
         }else {
             document.getElementById('shop-cart').classList.add('cart-hidden');
         }

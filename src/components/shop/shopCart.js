@@ -6,7 +6,7 @@ import * as actions from '../../actions';
 
 import CartButton from './cartButton';
 
-function CartContent({className, products}) {
+function CartContent({className, products, onClick}) {
     let count = products.length;
     let productsJSX = products.map(product => <CartProduct {...product} key={product._id}/>);
     return (
@@ -47,11 +47,19 @@ class ShopCart extends Component {
         this.props.fetchCartProducts();
     }
 
+    handleAddToCart = () => {
+        if(document.getElementById('shop-cart').classList.contains('cart-hidden')) {
+            document.getElementById('shop-cart').classList.remove('cart-hidden');
+        }else {
+            document.getElementById('shop-cart').classList.add('cart-hidden');
+        }
+    }
+
     render() {
         const { className } = this.props;
         return (
             <div id='shop-cart' className={`${className} shop-cart cart-hidden`}>
-                <CartButton className='shop-cart__toggle' icon='fas fa-times'/>
+                <CartButton className='shop-cart__toggle' icon='fas fa-times' onClick={this.handleAddToCart}/>
                 <CartContent className='shop-cart__content' products={this.props.cartProducts}/>
             </div>
         )
