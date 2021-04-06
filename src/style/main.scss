@@ -22,16 +22,16 @@ body {
 @import 'form-fields';
 @import 'details';
 
-// Auth
+// AUTH
 @import 'auth/signin';
 @import 'auth/signup';
 
-// Account
+// ACCUONT
 @import 'account/account';
 @import 'account/purchase-history';
 @import 'account/account-information';
 
-// Shop
+// SHOP
 @import 'shop/shop';
 @import 'shop/shop-search-bar';
 @import 'shop/shop-product';
@@ -40,6 +40,9 @@ body {
 @import 'shop/shop-cart';
 @import 'shop/cart-product';
 
-// Quantity
+// QUANTITY
 @import 'quantity';
 @import 'green-price-tag';
+
+// REVIEW
+@import 'order/review';
