@@ -24,13 +24,13 @@ const INITIAL_STATE = {
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
         case ADD_CART_PRODUCT:
-            var exists = false;
+            var exists = false
             const newCP = action.payload;
             var cartProducts = []
             state.cartProducts.map(cartProduct => {
-                if(cartProduct.product.id == newCP._id) {
+                if(cartProduct.product._id == newCP._id) {
                     exists = true
-                    cartProduct.quantity +=1;
+                    cartProduct.quantity += 1;
                 }
                 cartProducts.push(cartProduct);
             })
@@ -41,7 +41,6 @@ export default function(state = INITIAL_STATE, action) {
                     quantity: 1
                 })
             }
-
             return {
                 ...state,
                 cartProducts: cartProducts
