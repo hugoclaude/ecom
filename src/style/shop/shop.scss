@@ -6,7 +6,7 @@
     grid-template-rows: 15px [search-bar-s] 38px [search-bar-e] 57px [products-s] 1fr [products-e]; 
     grid-template-columns: [s] minmax(100px, 1035px) [e];
     justify-content: center;
-    // grid-gap: 27px;
+    // grid-gap: 57px;
 
     &__search-bar {
         grid-row: search-bar-s/search-bar-e;
@@ -20,7 +20,7 @@
 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        grid-column-gap:2px;
+        grid-column-gap:25px;
         grid-row-gap: 40px;
         // max-width: 1035px;
         width: 100%;

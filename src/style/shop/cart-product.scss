@@ -2,7 +2,7 @@
     height: 130px;
 
     display: grid;
-    grid-template-columns: [s] 1fr [m] 1fr [e];
+    grid-template-rows: [s] 1fr [m] 1fr [e];
     grid-template-columns: [s image-s] 130px [image-e] 34px [title-s quantity-s] 1fr [quantity-e] 20px [remove-s] 1fr [remove-e title-e price-s] 70px [price-e e];
     align-items: end;
 
@@ -25,7 +25,7 @@
         .quantity__count {
             color: white;
         }
-        }
+    }
     &__remove {
         grid-row: m/e;
         grid-column: remove-s/remove-e;

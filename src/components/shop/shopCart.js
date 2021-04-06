@@ -6,7 +6,8 @@ import * as actions from '../../actions';
 
 import CartButton from './cartButton';
 
-function CartContent({className, products, onClick}) {
+
+function CartContent({className, products}) {
     let count = products.length;
     let productsJSX = products.map(product => <CartProduct {...product} key={product._id}/>);
     return (
@@ -17,7 +18,7 @@ function CartContent({className, products, onClick}) {
             <div className='cart-content__products'>
                 {productsJSX}
             </div>
-            <div>
+            <div className='cart-content__footer'>
                 <CartFooter className='cart-content__footer' products={products}/>            
             </div>
         </div>
