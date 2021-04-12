@@ -18,8 +18,7 @@ class ReviewProducts extends Component {
                 })
             }
         </div>
-        )
-        
+        )       
     }
 }
 
