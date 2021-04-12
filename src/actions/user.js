@@ -30,7 +30,8 @@ export function fetchCartProducts() {
                     title: 'JavaScript in the Browser',
                     description: 'Arena of the Planeswalkers · Books and other Publications · Card game accessories Life counter Playmats Sleeves Deck boxes · Video games.',
                     price: 1.99,
-                    belongsTo: [0, 1]
+                    belongsTo: [0, 1],
+                    imageURL: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -41,7 +42,8 @@ export function fetchCartProducts() {
                     title: 'Graph Database',
                     description: 'Arena of the Planeswalkers · Books and other Publications · Card game accessories Life counter Playmats Sleeves Deck boxes · Video games.',
                     price: 1.99,
-                    belongsTo: [0, 6]
+                    belongsTo: [0, 6],
+                    imageURL: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 1
             },
