@@ -2,9 +2,9 @@
     grid-row: content-s/content-e;
     grid-column: s/e;
 
-    &__page-title {
+    // &__page-title {
 
-    }
+    // }
 
     &__form {
         display: grid;
@@ -34,6 +34,7 @@
     &__line {
         grid-row: line-s/line-e;
         border-top: 1px solid #ccc;
+        margin-bottom: 24px;
     }
     &__login {
         grid-row: buttons-s/buttons-e;
