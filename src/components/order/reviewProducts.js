@@ -9,15 +9,15 @@ class ReviewProducts extends Component {
         const { className } = this.props;
         return (
             <div className={`${className} review-proiducts`}>
-            {
-                this.props.cartProducts.map(cartProduct => {
-                    return <ReviewProduct
-                    key={cartProduct._id}
-                    {...cartProduct}
-                    />
-                })
-            }
-        </div>
+                {
+                    this.props.cartProducts.map(cartProduct => {
+                        return <ReviewProduct
+                        key={cartProduct._id}
+                        {...cartProduct}
+                        />
+                    })
+                }
+            </div>
         )       
     }
 }
