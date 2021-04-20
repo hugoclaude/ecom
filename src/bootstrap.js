@@ -37,8 +37,6 @@ function main() {
 
               <Route path='/information/shiping' exact component={Shipping}/>
               <Route path='/information/payment' exact component={Payment}/>
-
-
           </Switch>  
         </Layout>
       </Router>

@@ -3,9 +3,10 @@ import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 
 import { FormInput, FormButton } from "../formFields";
-import Details from "../details";
 
 import history from "../../history";
+
+// import OrderSummary from './orderSummary';
 
 class ShippingForm extends Component {
     render() {
@@ -31,7 +32,6 @@ class ShippingForm extends Component {
                 placeholder="City"
                 name="city"
                 component={FormInput}/>
-
                 <Field className="shipping-form__state"
                 type="state"
                 title="State
@@ -60,6 +60,7 @@ class ShippingForm extends Component {
                 name="back"
                 short={true}
                 component={FormButton}/>
+                {/* <OrderSummary className='shipping-form__order-summary' /> */}
             </form>
         );
     }
