@@ -1,0 +1,21 @@
+.underlined-title {
+
+}
+
+.info-title {
+    &__title {
+        font-size: 14px;
+    }
+    &__value {
+        color: #00CB79;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.info-title-green {
+    &__title {
+        font-weight: 600;
+        color: #00CB79;
+    }
+}
