@@ -35,7 +35,7 @@ function main() {
               <Route path='/shop' exact component={Shop}/>
               <Route path='/order/review' exact component={Review}/>
 
-              <Route path='/information/shiping' exact component={Shipping}/>
+              <Route path='/information/shipping' exact component={Shipping}/>
               <Route path='/information/payment' exact component={Payment}/>
           </Switch>  
         </Layout>

@@ -22,7 +22,7 @@ class Shipping extends Component {
 
     render() {
         return (
-            <div className='shipping'>
+            <div className="shipping">
                 <PageTitle className='shipping__page-title'  title='Shipping Address' />
                 <ShippingForm onSubmit={this.onSubmit} className='shipping__form' />
             </div>
