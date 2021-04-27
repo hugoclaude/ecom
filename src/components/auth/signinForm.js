@@ -45,8 +45,7 @@ class SignInForm extends Component {
                     component={FormInput}/>
                 <div className='sign-in-form__line'></div>
                 <Field
-                    className="sign-in-form__login"
-                    onClick={() => history.push('./account')}
+                    className="sign-in-form__login"                  
                     type="submit"
                     name="login"
                     type="login"
