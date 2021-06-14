@@ -19,7 +19,7 @@ function CartContent({className, products}) {
             </div>
             <div className='cart-content__products'>
                 {productsJSX}
-            </div>
+            </div>  
             <div className='cart-content__footer'>
                 <CartFooter className='cart-content__footer' products={products}/>            
             </div>
